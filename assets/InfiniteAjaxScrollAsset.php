@@ -23,20 +23,14 @@ class InfiniteAjaxScrollAsset extends AssetBundle
         'yii\web\JqueryAsset',
     ];
 
-    /**
-     * @inheritdoc
-     */
-    public function init()
-    {
-        $this->sourcePath = '@vendor/webcreate/jquery-ias/src';
-        $this->js = [
-            'callbacks.js',
-            'jquery-ias.js',
-            'extension/history.js',
-            'extension/noneleft.js',
-            'extension/paging.js',
-            'extension/spinner.js',
-            'extension/trigger.js'
-        ];
-    }
+    public $sourcePath = '@vendor/webcreate/jquery-ias/src';
+    public $js = [
+        'callbacks.js',
+        'jquery-ias.js',
+        'extension/history.js',
+        'extension/noneleft.js',
+        'extension/paging.js',
+        'extension/spinner.js',
+        'extension/trigger.js'
+    ];
 }
